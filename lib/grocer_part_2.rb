@@ -8,7 +8,7 @@ def apply_coupons(cart, coupons)
    coupons.each do |coupons_item|
      item_with_coupon = find_item_by_name_in_collection(coupons_item[:item], cart)
      
-     
+     if 
      
      
      

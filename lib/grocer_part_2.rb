@@ -12,6 +12,7 @@ def apply_coupons(cart, coupons)
        cart_item[:item]+= " W/COUPON"
        cart_item[:price]=coupons_item[:cost]/coupons_item[:num]
        
+       
      else
        cart_item[:count]=x
        item_with_coupon[:item]=cart_item[:item]+ " W/COUPON"

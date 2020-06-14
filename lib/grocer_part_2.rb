@@ -27,8 +27,8 @@ def apply_clearance(cart)
  cart_with_clearance=[]
  cart.each do |item|
    if item[:clearance]==true
-     item[:price]*=0.8
-     item[:price].round(2)
+     item[:price]*=0.8.round(2)
+     #item[:price].round(2)
  end    
  cart_with_clearance << item
  end 

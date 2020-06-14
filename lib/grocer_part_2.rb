@@ -14,7 +14,7 @@ def apply_coupons(cart, coupons)
        :clearance => cart_item[:clearance],
        :count => coupon[:nim]}
      
-     
+    item_with_coupon[:count] -= coupon[:num] 
      
    if coupons_item[:item]==cart_item[:item]
      x=cart_item[:count] % coupons_item[:num]

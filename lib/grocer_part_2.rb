@@ -5,10 +5,10 @@ def apply_coupons(cart, coupons)
  #cart.each do |cart_item|
    
    
-   coupons.each do |coupons_item|
-     item_with_coupon = find_item_by_name_in_collection(coupons_item[:item], cart)
+   coupons.each do |coupon|
+     item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
      
-     if 
+     if item_with_coupon[:count] >= coupon[:num]
      
      
      

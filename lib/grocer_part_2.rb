@@ -30,7 +30,7 @@ def apply_clearance(cart)
      item[:price]*=0.8
      item[:price].round(2)
  end    
- cart_with_clearance << cart
+ cart_with_clearance << item
  end 
   
   cart_with_clearance

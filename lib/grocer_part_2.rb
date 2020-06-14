@@ -1,9 +1,7 @@
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
- #cart.each do |cart_item|
-   
-   
+
    coupons.each do |coupon|
      item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
      
@@ -39,9 +37,13 @@ end
 
 
 def checkout(cart, coupons)
-  
-  consolidate_cart
-  
-  
-  
+  total=0
+  #apply_coupon(coupon, consolidate_cart(cart))
+  cart_after_discounts = apply_clearance(apply_coupon(coupon, consolidate_cart(cart)))
+  cart_after_discounts.each do |item|
+   total+= item[:price]*iten[:count]
+ end   
+ total 
+ if total >=100 
+   final_total*=0.9
 end

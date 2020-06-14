@@ -6,6 +6,13 @@ def apply_coupons(cart, coupons)
    
    
    coupons.each do |coupons_item|
+     
+     
+     
+     
+     
+     
+     
    if coupons_item[:item]==cart_item[:item]
      x=cart_item[:count] % coupons_item[:num]
      if x==0 

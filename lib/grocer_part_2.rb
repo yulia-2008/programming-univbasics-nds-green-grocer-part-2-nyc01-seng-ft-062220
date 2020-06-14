@@ -20,7 +20,7 @@ def apply_coupons(cart, coupons)
        item_with_coupon[:clearance]= true 
        item_with_coupon[:count]=cart_item[:count]/coupon_item[:num]
        item_with_coupon[:count].floor
-       new_cart << {:item => cart_item[:item]+ " W/COUPON"
+       new_cart << {:item => "#{cart_item[:item]}+  W/COUPON"
  end
  end
  end

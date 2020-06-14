@@ -9,7 +9,10 @@ def apply_coupons(cart, coupons)
      item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
      
      if item_with_coupon[:count] >= coupon[:num]
-     new_cart <<
+     new_cart <<{:item => "#{cart_item[:item]} W/COUPON",
+       :price => coupon_item[:cost] / coupon_item[:num],
+       :clearance => cart_item[:clearance],
+       :count => 
      
      
      

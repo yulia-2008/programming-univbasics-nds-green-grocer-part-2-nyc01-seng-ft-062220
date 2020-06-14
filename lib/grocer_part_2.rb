@@ -11,7 +11,7 @@ def apply_coupons(cart, coupons)
      if item_with_coupon[:count] >= coupon[:num]
      new_cart <<{:item => "#{coupon[:item]} W/COUPON",
        :price => coupon[:cost] / coupon[:num],
-       :clearance => cart_item[:clearance],
+       :clearance => item_with_coupon[:clearance],
        :count => coupon[:nim]}
      
     item_with_coupon[:count] -= coupon[:num] 

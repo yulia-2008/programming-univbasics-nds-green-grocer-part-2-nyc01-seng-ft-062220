@@ -28,7 +28,6 @@ def apply_clearance(cart)
  cart.each do |item|
    if item[:clearance]==true
      item[:price]*=0.8.round(2)
-     #item[:price].round(2)
  end    
  cart_with_clearance << item
  end 
@@ -40,13 +39,9 @@ end
 
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # This method should call
-  # * consolidate_cart
-  # * apply_coupons
-  # * apply_clearance
-  #
-  # BEFORE it begins the work of calculating the total (or else you might have
-  # some irritated customers
+  
+  consolidate_cart
+  
+  
+  
 end

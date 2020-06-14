@@ -18,13 +18,14 @@ def apply_coupons(cart, coupons)
      
    end
  end
- 
+ new_cart
+ end
      
      
      
      
      
-   if coupons_item[:item]==cart_item[:item]
+=begin  if coupons_item[:item]==cart_item[:item]
      x=cart_item[:count] % coupons_item[:num]
      if x==0 
        cart_item[:item]+= " W/COUPON"
@@ -50,7 +51,7 @@ end
   new_cart
 end
 
-
+=end
 
 
 def apply_clearance(cart)

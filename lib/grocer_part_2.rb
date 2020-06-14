@@ -1,7 +1,6 @@
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
-  new_cart=[]
  #cart.each do |cart_item|
    
    
@@ -18,7 +17,7 @@ def apply_coupons(cart, coupons)
      
    end
  end
- new_cart
+ cart
  end
      
      

@@ -14,6 +14,12 @@ def apply_coupons(cart, coupons)
        
      else
        cart_item[:count]=x
+       item_with_coupon[:item]=cart_item[:item]+ " W/COUPON"
+       item_with_coupon[:price]=
+       item_with_coupon[:clearance]= true 
+       item_with_coupon[:count]=cart_item[:count]/coupon_item[:num]
+       item_with_coupon[:count].floor
+       new_cart << item_with_coupon
  end
  end
  end
